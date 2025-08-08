@@ -28,7 +28,7 @@ const Todo = (props) => (
     const [todos, setTodoList] = useState([])
 
     useEffect(() => {
-        axios.get ('http://localhost:3000/api/tasks')
+        axios.get ('https://taskapp-backend-kw0q.onrender.com/api/tasks')
         .then((response) => {
             setTodoList(response.data)
         })
@@ -39,7 +39,7 @@ const Todo = (props) => (
     
     const deleteTodo = (id) => {
         axios
-          .delete('http://localhost:3000/api/tasks/delete/' + id)
+          .delete('https://taskapp-backend-kw0q.onrender.com/api/tasks/delete/' + id)
           .then((response) => {
             console.log(response.data);
           });

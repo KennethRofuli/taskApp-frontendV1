@@ -10,7 +10,7 @@ export default function CreateTask() {
     const activityvar = { activity: activity };
 
     axios
-      .post('http://localhost:3000/api/tasks/add', activityvar)
+      .post('https://taskapp-backend-kw0q.onrender.com/api/tasks/add', activityvar)
       .then(() => {
         window.location = '/';
       });
