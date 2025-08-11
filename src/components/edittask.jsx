@@ -28,7 +28,7 @@ export default function CreateTask() {
     // console.log(e)
 
     axios
-      .put(`http://localhost:3000/api/tasks/update/${id}`, activityvar)
+      .put(`https://taskapp-backend-kw0q.onrender.com/api/tasks/update/${id}`, activityvar)
       .then(() => {
         window.location = '/';
       });
