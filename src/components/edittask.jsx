@@ -24,7 +24,7 @@ export default function CreateTask() {
     const activityvar = { activity: activity };
     console.log(activityvar);
 
-    console.log(`http://localhost:3000/api/tasks/update/${id}`);
+    //console.log(`http://localhost:3000/api/tasks/update/${id}`);
     // console.log(e)
 
     axios
